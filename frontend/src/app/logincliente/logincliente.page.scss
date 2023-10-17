@@ -1,0 +1,61 @@
+ion-content{
+    --overflow: hidden;
+    
+}
+
+.botao{
+    width: 70%; 
+    background-color: #734458 ;
+  
+    color: white;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+.logo{
+  margin: auto;
+  display: block;
+ 
+  position: absolute; /* Define a segunda imagem como uma posição absoluta */
+  top: 0; /* Define a posição superior a 0 (canto superior) */
+  left: 0; /* Define a posição esquerda a 0 (canto esquerdo) */
+}
+
+
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  
+}
+
+
+//Animação--------------------------------------------------------------------------------------//
+@keyframes waveAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Altere a altura desejada do movimento */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#wave {
+  animation: waveAnimation 2s linear infinite; /* Altere a duração da animação, se necessário */
+}
